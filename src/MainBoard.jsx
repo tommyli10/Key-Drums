@@ -1,9 +1,13 @@
 import Key from "./Key.jsx";
 
 const MainBoard = () => {
+    const sounds = new Array(9).fill(0);
+
     return (
         <>
-            <Key />
+            {sounds.map((sound, index) => (
+                <Key keyName={sound} key={index} />
+            ))}
         </>
     );
 }

@@ -1,6 +1,8 @@
-const Key = () => {
+const Key = ({ keyName }) => {
+    console.log('keyName', keyName)
+
     return (
-        <div>key</div>
+        <div>{keyName}</div>
     );
 }
 
